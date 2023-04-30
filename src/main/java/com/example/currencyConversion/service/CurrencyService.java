@@ -28,13 +28,13 @@ public class CurrencyService {
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);
         }
-        System.out.println(response);
+
         in.close();
 
         JSONObject jsonObject = new JSONObject(response.toString());
         JSONObject rates = jsonObject.getJSONObject("rates");
-        System.out.println(rates.getDouble(targetCurrency));
 
-        return AmountInSourceCurrency/ rates.getDouble(sourceCurrency)*rates.getDouble(targetCurrency);
+
+        return AmountInSourceCurrency/rates.getDouble(sourceCurrency)*rates.getDouble(targetCurrency);
     }
 }

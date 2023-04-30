@@ -1,4 +1,4 @@
-package com.example.currencyConversion.Request;
+package com.example.currencyConversion.request;
 
 import lombok.*;
 
